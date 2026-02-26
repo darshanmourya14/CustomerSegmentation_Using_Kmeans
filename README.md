@@ -1,4 +1,5 @@
 📊 Customer Segmentation & BI Dashboard
+
 🔎 Project Overview
 
 This project applies unsupervised machine learning to segment customers based on income and spending behavior. The clustering results are integrated into a Power BI dashboard to enable KPI-based analysis and interactive business reporting.
