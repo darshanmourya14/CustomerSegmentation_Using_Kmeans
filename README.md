@@ -1,121 +1,107 @@
-# Customer Segmentation using K-Means Clustering
+📊 Customer Segmentation & BI Dashboard
+🔎 Project Overview
 
-## 📌 Project Overview
+This project applies unsupervised machine learning to segment customers based on income and spending behavior. The clustering results are integrated into a Power BI dashboard to enable KPI-based analysis and interactive business reporting.
 
-This project performs customer segmentation using unsupervised machine learning. The goal is to group customers based on purchasing behavior and income patterns to help businesses identify high-value segments and improve marketing strategies.
+The objective is to transform raw customer data into actionable segments that support marketing strategy and decision-making.
 
-The analysis follows a structured data analytics workflow including preprocessing, clustering, validation, and business interpretation.
+🎯 Business Objective
 
----
+Businesses often struggle to identify high-value and low-engagement customers.
+This project aims to:
 
-## 🎯 Problem Statement
+Group customers using behavioral patterns
 
-Businesses often struggle to understand different types of customers.
-This project uses K-Means clustering to identify distinct customer groups based on:
+Quantify segment distribution and spending trends
 
-* Annual Income
-* Spending Score
+Translate machine learning output into business insights
 
-The output helps identify premium customers, average buyers, and low-engagement segments.
+Enable dashboard-driven analysis for stakeholders
 
----
+🛠 Tools & Technologies
 
-## 🗂 Dataset
+Python
 
-Mall Customer Segmentation Dataset
+Pandas
 
-Features used:
+NumPy
 
-* Annual Income (k$)
-* Spending Score (1–100)
+Scikit-learn
 
----
+Matplotlib
 
-## ⚙️ Tools & Technologies
+Techniques
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-learn
-* PCA (Principal Component Analysis)
+Exploratory Data Analysis (EDA)
 
----
+Feature Scaling (StandardScaler)
 
-## 🔎 Project Workflow
+K-Means Clustering
 
-1. Data Loading and Understanding
-2. Data Cleaning and Feature Selection
-3. Feature Scaling using StandardScaler
-4. Optimal Cluster Selection using Elbow Method
-5. K-Means Model Training
-6. Cluster Validation using Silhouette Score
-7. Visualization of Clusters
-8. PCA-based Dimensionality Reduction
-9. Business Interpretation of Customer Segments
+Silhouette Score Validation
 
----
+SQL-style Aggregation
 
-## 📊 Key Techniques Used
+Business Intelligence
 
-* K-Means Clustering
-* StandardScaler
-* Elbow Method
-* Silhouette Score
-* PCA Visualization
+Power BI
 
----
+DAX Measures
 
-## 📈 Key Insights
+Interactive Dashboard Design
 
-* High income + high spending customers form premium segments.
-* Low income + low spending customers represent price-sensitive groups.
-* Mid-income clusters show varied spending behavior, indicating potential marketing opportunities.
+⚙️ Project Workflow
 
----
+Data Loading & Cleaning
 
-## 📷 Visualizations
+Exploratory Data Analysis
 
-* Elbow Method Plot
-* Cluster Scatter Plot
-* PCA Cluster Projection
+Feature Selection (Income & Spending Score)
 
----
+Data Scaling using StandardScaler
 
-## 📁 Repository Structure
+K-Means Clustering
 
-Customer-Segmentation-KMeans/
+Cluster Validation using Silhouette Score
 
-data/
-Mall_Customers.csv
+KPI-based Cluster Profiling
 
-notebook/
-customer_segmentation.ipynb
+Export of Segmented Dataset
 
-README.md
+Power BI Dashboard Development
 
----
+📈 Dashboard Highlights
 
-## 🚀 How to Run
+The Power BI dashboard includes:
 
-1. Clone the repository
-2. Install required libraries:
-   pip install pandas numpy matplotlib scikit-learn
-3. Open the notebook and run all cells
+Total Customer KPI
 
----
+Average Spending Score KPI
 
-## 💡 Business Value
+Customer Distribution by Segment
 
-Customer segmentation helps companies:
+Income vs Spending Scatter Visualization
 
-* Target marketing campaigns
-* Improve customer retention
-* Identify high-value customers
-* Optimize pricing strategies
+Interactive filtering by customer segment
 
----
+💡 Key Insights
 
-## 👤 Author
+Distinct customer groups emerge based on spending behavior.
 
-Data Analytics Project – Customer Segmentation using K-Means
+High-income high-spending clusters represent premium customers.
+
+Moderate-income segments show varied engagement levels.
+
+Segmentation enables targeted marketing and retention strategies.
+
+📂 Repository Structure
+customer-segmentation-powerbi/
+│
+├── customer_segmentation.ipynb
+├── segmented_customers_output.csv
+├── Customer_Segmentation_Dashboard.pbix
+└── README.md
+🚀 Business Value
+
+This project demonstrates how machine learning can be operationalized into a reporting environment.
+It bridges data science and business intelligence by converting clustering outputs into dashboard-ready KPIs.
